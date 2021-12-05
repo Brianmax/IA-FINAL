@@ -4,8 +4,9 @@ En este trabajo implementaremos un GAN, que sera entrenada por el conjunto de da
 - Rafael David Peñalva
 - Christopher Yquira Miranda
 - George Brian Maxi Ccapa
-## Link del video
-[Generative Adversarial Networks](https://drive.google.com/file/d/1sBZt3tG1UhErGzbnhT5JWNzy4LreqP0p/view)
+## Links
+- [Video](https://drive.google.com/file/d/1sBZt3tG1UhErGzbnhT5JWNzy4LreqP0p/view)
+- [Paper](https://arxiv.org/pdf/1406.2661.pdf)
 ## Capturas
 ![](https://github.com/Brianmax/IA-FINAL/blob/main/imagenes/download.png)
 
