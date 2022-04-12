@@ -1,6 +1,5 @@
 import random
-
-
+import time
 #Crear una lista de números enteros.
 def listaNum(start, end):
   lista = []
@@ -20,9 +19,15 @@ def Cartillas(inicio, fin, cantidad): #parámetros: inicio y final de la lista
         n = lista[a]                  #Escoger el elemento de la lista correspondiente a dicho índice
         listaNueva.append(n)
         lista.pop(a)
+    print(listaNueva)
     return listaNueva
 
-
+def indice(listaNueva, elemento):
+    index = 0
+    for e in listaNueva:
+        if e == elemento:
+            return index
+        index = index + 1
 def bolillas(listaNueva):
   lista = listaNum(1, 20)
   while len(lista) > 0:
@@ -30,7 +35,12 @@ def bolillas(listaNueva):
     n = lista[a]
     print(n, end=" ")
     lista.pop(a)
+    if n in listaNueva:
+        index = indice(listaNueva, n)
+        listaNueva.pop(index)
     print()
+    time.sleep(5)
+    print(listaNueva)
 
 listaNueva = Cartillas(1,20,16)
 bolillas(listaNueva)
